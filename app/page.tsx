@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Home() {
   return (
     <main>
@@ -23,7 +25,8 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <img src="/mainImage.png" width={350} />
+      <Image width={350} height={350} className="flex-1" alt="3D Printing" priority
+       src="/mainImage.png" width={350} />
     </section>
   </main>
   )
